@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+         /* ini adalah internal css */
+         
+        header{
+            background-color: rgb(220, 232, 255);
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+            width: 80%;
+            margin: auto;
+        }
+        nav {
+            background-color: rgba(196, 212, 235, 0.73);
+            padding-block: 20px ;
+            text-align: center;
+            width: 80%;
+            margin: auto;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            margin-inline: 130px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: white(251, 251, 251);
+        }
+        .hero {
+            text-align: center;
+            padding: 150px 0;
+            height: 400px;
+            color: white;
+            width: 80%;
+            margin: auto;
+            text-shadow: wheat;
+            /* background-color: grey; */
+            background: url('https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-business-technology-digital-high-tech-world-background-backgroundtechnology-backgroundhigh-tech-backgroundworld-image_79012.jpg') no-repeat center center/cover;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-size: 30px;
+        }
+
+        .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px 0;
+        /* background-color: red; */
+      }
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service {
+            flex: 1;
+            background-color: #c0ccdf;
+            padding: 20px;
+            box-shadow: 0 0 10px;
+            text-align: center;
+            border-radius: 10px;
+            color: black;
+        }
+
+        .service h3 {
+            color: #c0ccdf;
+        }
+
+        form {
+            background: #c0ccdf;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input,
+      textarea {
+        width: 99%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #c0ccdf;
+        border-radius: 5px;
+      }
+
+      button {
+        background: #0490e7;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #036ca9;
+      }
+
+        footer {
+            background-color: rgb(117, 106, 128);
+            padding-block: 10px;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 70px; color: black;">Selamat Datang Di PT Teknologi Penanganan</h1>
+        <p style="font-size: 40px; color: black;">Inovasi Teknologi untuk Penanganan yang Lebih Baik</p>
+    </header>
+    <nav>
+        <a href="#beranda" style="font-size: 40px; color: black;">Beranda</a>
+        <a href="#tentang" style="font-size: 40px; color: black;">Tentang</a>
+        <a href="#layanan" style="font-size: 40px; color: black;">Layanan</a>
+        <a href="#kontak" style="font-size: 40px; color: black;">Kontak</a>
+    </nav>
+    <section id="home" class="hero">
+        <h1 style="font-size: 100px;">Selamat datang di Perusahaan Kami</h1>
+    </section>
+
+    <section class="container" id="layanan">
+      <h2 style="text-align: center; font-size: 50px;">Layanan Kami</h2>
+      <div class="services">
+        <div class="service" data-aos="flip-down">
+            <h3 style="font-size: 40px;  color: black;">Jasa Desain Web</h3>
+                <p style="font-size: 35px;">Kami menyediakan jasa desain web profesional.</p>
+            </div>
+            <div class="service" data-aos="flip-down">
+                <h3 style="font-size: 40px; color: black;">Jasa Perbaikan</h3>
+                <p style="font-size: 35px;">Kami menerima bongkar & pasang barang.</p>
+            </div>
+            <div class="service" data-aos="flip-down">
+                <h3 style="font-size: 40px;  color: black;">Jasa Jaringan</h3>
+                <p style="font-size: 35px;">Kami menyiapkan jaringan atau network.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="container" id="tentang">
+      <h2 style="text-align: center; font-size: 50px;">Tentang Kami</h2>
+      <div class="services">
+        <div class="service" data-aos="zoom-in-down">
+          <h3 style="font-size: 40px;  color: black;">Visi</h3>
+          <p style="font-size: 35px;">Menjadi perusahaan tenologi penanganan yang terpercaya</p>
+        </div>
+        <div class="service" data-aos="zoom-in-down">
+          <h3 style="font-size: 40px;  color: black;">Misi</h3>
+          <p style="font-size: 35px;">Mengembangkan solusi teknologi yang efektif</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="kontak">
+      <h2 style="text-align: center; font-size: 50px;">Hubungi kami</h2>
+      <form style="font-size: 30px;" staction="">
+        <label>Nama</label>
+        <input style="font-size: 25px;" type="text" placeholder="Masukkan nama Anda" />
+        <label>Email</label>
+        <input style="font-size: 25px;" type="email" placeholder="Masukkan email Anda" />
+        <label>Pesan</label>
+        <textarea style="font-size: 25px;" rows="5" placeholder="Masukkan pesan Anda"></textarea>
+        <button style="font-size: 25px;" type="submit">Kirim</button>
+      </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PT. 2SPH 11129</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+</body>
+</html>
